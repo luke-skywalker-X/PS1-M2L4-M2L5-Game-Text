@@ -1,0 +1,33 @@
+print("Selamat datang di Perancang Karakter Pendukung Game Teks!")
+print("Jawablah pertanyaan-pertanyaan di bawah ini untuk merencanakan karakter pendukung game Anda.\n")
+
+# Pertanyaan 1: Karakter apa lagi yang akan ada di dalam game?
+karakter_lain = input("1. Karakter apa lagi yang akan ada di dalam game? (Contoh: orang tua bijak, penyihir jahat, binatang ramah, pisahkan dengan koma): ").strip()
+daftar_karakter_lain = [char.strip() for char in karakter_lain.split(',')]
+print("\n   Karakter lain dalam game Anda:")
+for i, karakter in enumerate(daftar_karakter_lain):
+    print(f"      - {karakter}")
+print("\n")
+
+# Informasi untuk setiap karakter pendukung
+detail_karakter = {}
+for karakter in daftar_karakter_lain:
+    print(f"--- Informasi untuk karakter: {karakter} ---")
+    bantuan_hambatan = input(f"   Bagaimana {karakter} membantu atau menghalangi karakter utama? (Contoh: memberi nasihat, membuat rencana jahat, membantu dalam pertarungan): ").strip()
+    penampilan_perilaku = input(f"   Bagaimana penampilan dan perilaku {karakter}? (Contoh: kakek dengan janggut panjang dan tongkat, penyihir berjubah hitam, makhluk berbulu dengan ekor lebat): ").strip()
+    detail_karakter[karakter] = {
+        "peran": bantuan_hambatan,
+        "deskripsi": penampilan_perilaku
+    }
+    print("\n")
+
+print("===== Rencana Karakter Pendukung Anda ======")
+for karakter, detail in detail_karakter.items():
+    print(f"Karakter: {karakter}")
+    print(f"   Peran: {detail['peran']}")
+    print(f"   Deskripsi: {detail['deskripsi']}")
+    print()
+
+print("Anda telah menyelesaikan perencanaan dasar karakter pendukung game teks Anda.")
+print("Sekarang Anda dapat mulai mengintegrasikan karakter-karakter ini ke dalam alur cerita game Anda.")
+print("Semoga berhasil!")
