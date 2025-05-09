@@ -1,0 +1,45 @@
+print("Selamat datang di Perancang Alur Cerita Game Teks!")
+print("Jawablah pertanyaan-pertanyaan di bawah ini untuk merencanakan alur cerita game Anda.\n")
+
+# Pertanyaan 1: Apa cerita utama dalam game tersebut?
+cerita_utama = input("1. Apa cerita utama dalam game tersebut? (Contoh: karakter harus mengalahkan naga untuk menyelamatkan sang putri): ").strip()
+print(f"\n   Cerita utama game Anda adalah: {cerita_utama}\n")
+
+# Pertanyaan 2: Tugas apa saja yang harus diselesaikan untuk menyelesaikan permainan?
+tugas_utama = input("2. Tugas apa saja yang harus diselesaikan untuk menyelesaikan permainan? (Contoh: menemukan tiga kunci, memecahkan teka-teki, mengalahkan musuh, pisahkan dengan koma): ").strip()
+daftar_tugas_utama = [tugas.strip() for tugas in tugas_utama.split(',')]
+print("\n   Tugas utama untuk menyelesaikan permainan:")
+for i, tugas in enumerate(daftar_tugas_utama):
+    print(f"      - {tugas}")
+print("\n")
+
+# Pertanyaan 3: Hambatan dan kesulitan apa yang akan dihadapi?
+hambatan = input("3. Hambatan dan kesulitan apa yang akan dihadapi? (Contoh: jebakan, musuh, teka-teki yang sulit, pisahkan dengan koma): ").strip()
+daftar_hambatan = [hambatan.strip() for hambatan in hambatan.split(',')]
+print("\n   Hambatan dan kesulitan yang akan dihadapi:")
+for i, hambatan_item in enumerate(daftar_hambatan):
+    print(f"      - {hambatan_item}")
+print("\n")
+
+# Pertanyaan 4: Apa yang akan terjadi jika karakter utama mengambil keputusan yang salah?
+konsekuensi_salah = input("4. Apa yang akan terjadi jika karakter utama mengambil keputusan yang salah? (Contoh: terjebak, kehilangan kesehatan, permainan berakhir): ").strip()
+print(f"\n   Konsekuensi keputusan yang salah: {konsekuensi_salah}\n")
+
+# Pertanyaan 5: Bagaimana akhir dari permainan?
+akhir_permainan = input("5. Bagaimana akhir dari permainan? (Contoh: karakter utama mengalahkan penjahat dan menyelamatkan dunia, menemukan harta karun, kembali ke rumah dan menceritakan petualangannya): ").strip()
+print(f"\n   Akhir dari permainan: {akhir_permainan}\n")
+
+print("===== Rencana Alur Cerita Game Anda ======")
+print(f"Cerita Utama: {cerita_utama}")
+print("Tugas Utama:")
+for tugas in daftar_tugas_utama:
+    print(f"   - {tugas}")
+print("Hambatan dan Kesulitan:")
+for hambatan_item in daftar_hambatan:
+    print(f"   - {hambatan_item}")
+print(f"Konsekuensi Keputusan Salah: {konsekuensi_salah}")
+print(f"Akhir Permainan: {akhir_permainan}")
+print("\n")
+print("Anda telah menyelesaikan perencanaan dasar alur cerita game teks Anda.")
+print("Sekarang Anda dapat mulai menulis narasi dan interaksi berdasarkan rencana ini.")
+print("Semoga berhasil!")
