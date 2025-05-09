@@ -1,0 +1,37 @@
+print("Selamat datang di Perancang Lokasi Game Teks!")
+print("Jawablah pertanyaan-pertanyaan di bawah ini untuk merencanakan lokasi game Anda.\n")
+
+# Pertanyaan 1: Di mana permainan akan berlangsung?
+lokasi_awal = input("1. Di mana permainan akan berlangsung? (Contoh: hutan yang terpesona, kapal luar angkasa, kastil terbengkalai): ").strip()
+print(f"\n   Lokasi awal game Anda adalah: {lokasi_awal}\n")
+
+# Pertanyaan 2: Deskripsikan tempatnya.
+deskripsi_lokasi = input(f"2. Tempat apa itu ({lokasi_awal})? Deskripsikan tempatnya. (Contoh: hutan gelap dan misterius, penuh suara aneh dan pohon-pohon tua): ").strip()
+print(f"\n   Deskripsi {lokasi_awal}: {deskripsi_lokasi}\n")
+
+# Pertanyaan 3: Apakah lokasinya akan berubah? Jika ya, bagaimana caranya?
+perubahan_lokasi = input("3. Apakah lokasinya akan berubah selama permainan? (ya/tidak): ").strip().lower()
+alur_perubahan_lokasi = ""
+if perubahan_lokasi == "ya":
+    alur_perubahan_lokasi = input("   Jika ya, bagaimana caranya? (Contoh: pemain berpindah dari hutan ke gua, lalu ke kastil): ").strip()
+    print(f"\n   Alur perubahan lokasi: {alur_perubahan_lokasi}\n")
+else:
+    print("   Baiklah, lokasi akan tetap sama.\n")
+
+# Pertanyaan 4: Tempat atau benda menarik apa yang ada di lokasi ini?
+benda_menarik = input(f"4. Tempat atau benda menarik apa yang ada di {lokasi_awal} ini? (Contoh: sumur tua, jamur bercahaya, pintu misterius): ").strip()
+print(f"\n   Tempat atau benda menarik di {lokasi_awal}: {benda_menarik}\n")
+
+print("===== Rencana Lokasi Game Anda ======")
+print(f"Lokasi Awal: {lokasi_awal}")
+print(f"Deskripsi Lokasi: {deskripsi_lokasi}")
+if perubahan_lokasi == "ya":
+    print(f"Perubahan Lokasi: Ya")
+    print(f"Alur Perubahan Lokasi: {alur_perubahan_lokasi}")
+else:
+    print("Perubahan Lokasi: Tidak")
+print(f"Tempat atau Benda Menarik: {benda_menarik}")
+print("\n")
+print("Anda telah menyelesaikan perencanaan dasar lokasi game teks Anda.")
+print("Sekarang Anda dapat mulai mengintegrasikan ini ke dalam alur cerita game Anda.")
+print("Semoga berhasil!")
