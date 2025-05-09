@@ -1,0 +1,9 @@
+import random
+print("Selamat datang di Perancang Game Teks!")
+print("Jawablah pertanyaan di bawah ini untuk merencanakan game Anda.\n")
+genre = input("1. Genre game Anda? (misal: petualangan, misteri): ").strip().lower()
+tingkat_kesulitan = input("2. Tingkat kesulitan? (mudah, sedang, sulit): ").strip().lower()
+print("\n===== Rencana Game Anda ======")
+print(f"Genre: {genre}")
+print(f"Tingkat Kesulitan: {tingkat_kesulitan}")
+print("\nSekarang Anda bisa mulai membuat game teks Anda!")
