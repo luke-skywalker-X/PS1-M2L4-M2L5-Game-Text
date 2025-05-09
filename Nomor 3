@@ -1,0 +1,40 @@
+print("Selamat datang di Perancang Karakter Game Teks!")
+print("Jawablah pertanyaan-pertanyaan di bawah ini untuk merencanakan karakter utama game Anda.\n")
+
+
+# Pertanyaan 1: Siapa karakter utamanya?
+peran_karakter = input("1. Siapa karakter utamanya? (Contoh: seorang ksatria pemberani, seorang putri yang penasaran, seorang anak sekolah biasa): ").strip()
+print(f"\n   Karakter utama Anda adalah: {peran_karakter}\n")
+
+
+# Pertanyaan 2: Siapa nama karakternya?
+nama_karakter = input("2. Siapa nama karakternya? (Contoh: Sir Richard, Putri Aurora, Max): ").strip()
+print(f"\n   Nama karakternya adalah: {nama_karakter}\n")
+
+
+# Pertanyaan 3: Kemampuan dan keahlian apa yang dimilikinya?
+kemampuan_karakter = input("3. Kemampuan dan keahlian apa yang dimilikinya? (Contoh: pandai bertarung, menguasai sihir, ahli memecahkan teka-teki): ").strip()
+print(f"\n   Kemampuan dan keahlian {nama_karakter}: {kemampuan_karakter}\n")
+
+
+# Pertanyaan 4: Apa tujuan utamanya dalam permainan?
+tujuan_karakter = input("4. Apa tujuan utamanya dalam permainan? (Contoh: menyelamatkan kerajaan, menemukan harta karun, pulang ke rumah): ").strip()
+print(f"\n   Tujuan utama {nama_karakter}: {tujuan_karakter}\n")
+
+
+# Pertanyaan 5: Bagaimana penampilannya?
+penampilan_karakter = input("5. Bagaimana penampilannya? (Contoh: memakai baju zirah yang berkilau, gaun yang indah, atau kaos dan celana jeans biasa): ").strip()
+print(f"\n   Penampilan {nama_karakter}: {penampilan_karakter}\n")
+
+
+print("===== Rencana Karakter Utama Anda ======")
+print(f"Peran Karakter: {peran_karakter}")
+print(f"Nama Karakter: {nama_karakter}")
+print(f"Kemampuan dan Keahlian: {kemampuan_karakter}")
+print(f"Tujuan Utama: {tujuan_karakter}")
+print(f"Penampilan: {penampilan_karakter}")
+print("\n")
+print("Anda telah menyelesaikan perencanaan dasar karakter utama game teks Anda.")
+print("Sekarang Anda dapat mulai mengintegrasikan karakter ini ke dalam alur cerita game Anda.")
+print("Semoga berhasil!")
+
